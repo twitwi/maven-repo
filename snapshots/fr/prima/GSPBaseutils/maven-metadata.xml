@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>com.heeere.gsp</groupId>
-  <artifactId>GSPGstreamer</artifactId>
+  <groupId>fr.prima</groupId>
+  <artifactId>GSPBaseutils</artifactId>
   <version>1.0-SNAPSHOT</version>
   <versioning>
     <versions>
       <version>1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20120403215130</lastUpdated>
+    <lastUpdated>20120403215313</lastUpdated>
   </versioning>
 </metadata>
