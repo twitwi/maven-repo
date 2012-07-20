@@ -1,0 +1,59 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.heeere.gsp</groupId>
+    <artifactId>gsp-videotools</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0</version>
+     <name>GSPVideoTools</name>
+     <description>Some video related modules for the GSP Framework.</description>
+    <url>https://github.com/twitwi/GSPVideoTools</url>
+
+    <repositories>
+        <repository>
+            <id>githubtwitwi</id>
+            <name>github/twitwi maven repository</name>
+            <url>http://twitwi.github.com/maven-repo/releases</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>fr.prima</groupId>
+            <artifactId>gsp-framework</artifactId>
+            <version>1.2</version>
+        </dependency>
+    </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>gh-repo</id>
+            <url>file:../maven-repo/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>gh-snap-repo</id>
+            <url>file:../maven-repo/snapshots</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
