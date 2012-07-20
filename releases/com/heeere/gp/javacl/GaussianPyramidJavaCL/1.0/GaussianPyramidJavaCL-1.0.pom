@@ -1,0 +1,78 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <name>GaussianPyramidJavaCL</name>
+    <groupId>com.heeere.gp.javacl</groupId>
+    <artifactId>GaussianPyramidJavaCL</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <repositories>
+        <repository>
+            <id>githubtwitw</id>
+            <name>github/twitwi maven repository</name>
+            <url>http://twitwi.github.com/maven-repo/releases</url>
+        </repository>
+    </repositories>
+    
+    <pluginRepositories>
+        <!-- We need this repository to get a 1.0-SNAPSHOT for the javacl maven plugin because there has been a necessary fix since 1.0.0-RC2 -->
+        <!-- This will get removed at the next major release of the javacl plugin (1.0.0?). -->
+        <pluginRepository>
+            <id>sonatype</id>
+            <name>Sonatype OSS Snapshots Repository</name>
+            <url>http://oss.sonatype.org/content/groups/public</url>
+        </pluginRepository>
+    </pluginRepositories>
+	
+    <dependencies>
+        <dependency>
+            <groupId>com.nativelibs4java</groupId>
+            <artifactId>javacl</artifactId>
+            <version>1.0.0-RC2</version>
+        </dependency>
+        <dependency>
+            <groupId>fr.prima</groupId>
+            <artifactId>gsp-framework</artifactId>
+            <version>1.2</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.nativelibs4java</groupId>
+                <artifactId>maven-javacl-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version><!-- see comment above -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+	
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+            </plugin>
+
+        </plugins>
+    </build>
+    
+    <distributionManagement>
+        <repository>
+            <id>gh-repo</id>
+            <url>file:../../maven-repo/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>gh-snap-repo</id>
+            <url>file:../../maven-repo/snapshots</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
