@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>fr.prima</groupId>
-  <artifactId>gsp-framework</artifactId>
-  <version>1.1</version>
+  <artifactId>gsp-baseutils</artifactId>
+  <version>1.2</version>
   <versioning>
     <versions>
-      <version>1.1</version>
       <version>1.2</version>
     </versions>
-    <lastUpdated>20120720121209</lastUpdated>
+    <lastUpdated>20120720121227</lastUpdated>
   </versioning>
 </metadata>
