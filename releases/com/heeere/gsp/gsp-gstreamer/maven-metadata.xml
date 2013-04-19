@@ -3,11 +3,12 @@
   <groupId>com.heeere.gsp</groupId>
   <artifactId>gsp-gstreamer</artifactId>
   <versioning>
-    <release>1.2</release>
+    <release>1.3</release>
     <versions>
       <version>1.1</version>
       <version>1.2</version>
+      <version>1.3</version>
     </versions>
-    <lastUpdated>20130408001014</lastUpdated>
+    <lastUpdated>20130419095135</lastUpdated>
   </versioning>
 </metadata>
